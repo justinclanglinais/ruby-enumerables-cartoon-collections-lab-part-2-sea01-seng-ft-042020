@@ -22,15 +22,5 @@ def find_valid_calls(planeteer_calls)
   valid_calls = ["Earth!", "Wind!", "Fire!", "Water!", "Heart!"]
   # Use an Enumerable to check if any elements in the passed in array match the valid calls listed above 
   # Return the first valid call found, or return nil if no valid calls are found
-  x = 0 
-  while planeteer_calls[x] < planeteer_calls.length do
-    y = 0 
-    while valid_calls[y] < valid_calls.length do
-      if planeteer_calls[x] == valid_calls[y]
-        return valid_calls[y]
-      end
-      y += 1 
-    end
-    x += 1 
-  end
+  planeteer_calls.find
 end
