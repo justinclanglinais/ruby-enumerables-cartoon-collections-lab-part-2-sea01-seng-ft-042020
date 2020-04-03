@@ -18,6 +18,7 @@ def long_planeteer_calls(planeteer_calls)
   planeteer_calls.map do |x|
     if x.length > 4
       puts true 
+    end
   end
 end
 
