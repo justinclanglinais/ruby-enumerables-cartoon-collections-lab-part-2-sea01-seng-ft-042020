@@ -26,4 +26,6 @@ def find_valid_calls(planeteer_calls)
     {
       |x| { |y| y.find (valid_calls) }
   }
+  )
+  
 end
